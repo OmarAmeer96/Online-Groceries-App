@@ -24,18 +24,18 @@ class CustomCartItem extends StatelessWidget{
                  children: [
                    Container(
                        padding: EdgeInsets.only(left: 20),
-                       child: Text("Bell Pepper Red",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),)),
+                       child: Text("Bell Pepper Red",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 16,fontFamily: 'Gilroy-Bold'),)),
                    SizedBox(height: 5,),
                    Container(
                      padding: EdgeInsets.only(right: 32),
-                       child: Text("1Kg, Price",style: TextStyle(fontSize: 14,color: Color(0xFF7C7C7C)),)),
+                       child: Text("1Kg, Price",style: TextStyle(fontSize: 14,color: Color(0xFF7C7C7C),fontFamily: 'Gilroy-Bold'),)),
                    SizedBox(height: 15,),
                    Row(
                      children: [
                        SizedBox(width: 20,),
                        AddMinusButtonIcon(icon:Icons.remove,color: Color(0xFF7C7C7C)),
                        SizedBox(width: 15,),
-                       Text("1",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),),
+                       Text("1",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16,fontFamily: 'Gilroy-Bold'),),
                        SizedBox(width: 15,),
                        AddMinusButtonIcon(icon:Icons.add,color: Color(0xFF8D070F)),
                      ],
@@ -48,7 +48,7 @@ class CustomCartItem extends StatelessWidget{
                  children: [
                    IconButton(onPressed: (){}, icon: Icon(Icons.close,color: Color(0xFFB3B3B3),)),
                    SizedBox(height: 48,),
-                   Text("\$4.99",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
+                   Text("\$4.99",style: TextStyle(fontWeight: FontWeight.w500,fontSize: 18,fontFamily: 'Gilroy-Bold'),),
                  ],
                ),
              ],
