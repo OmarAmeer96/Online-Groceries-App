@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:online_groceries_app/views/widgets/CustomButton.dart';
 import 'package:online_groceries_app/views/widgets/CustomCartItem.dart';
 import 'package:online_groceries_app/views/widgets/ListView.dart';
 class MyCartView extends StatelessWidget{
@@ -12,13 +13,7 @@ class MyCartView extends StatelessWidget{
           SizedBox(height: 10.0,),
           Divider(thickness: 1.4,),
           Expanded(child: ListVieww()),
-          MaterialButton(
-            onPressed: (){},
-              color: Color(0xFF8D070F)
-              ,child: Text("Go To Checkout",style: TextStyle(color: Colors.white,fontSize: 18,fontFamily: 'Gilroy-Bold'),),
-            padding: EdgeInsets.symmetric(horizontal: 100,vertical: 18),
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(19.0))
-          )
+          CustomButton(),
         ],
       )
     );
