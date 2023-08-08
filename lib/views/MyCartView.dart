@@ -9,9 +9,9 @@ class MyCartView extends StatelessWidget{
     return Scaffold(
       body:Column(
         children: [
-          Header(),
+          Header(text: "My Cart",),
           Expanded(child: ListVieww()),
-          CustomButton(),
+          CustomButton(text: "Go To Checkout",),
         ],
       )
     );
