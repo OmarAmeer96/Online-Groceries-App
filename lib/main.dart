@@ -31,6 +31,15 @@ class MyApp extends StatelessWidget {
         SignInScreen.id: (context) => SignInScreen(),
         SignUpScreen.id: (context) => const SignUpScreen(),
         HomeScreen.id: (context) => const HomeScreen(),
+        AppleDetail.id: (context) => const AppleDetail(),
+        BananaDetail.id: (context) => const BananaDetail(),
+        BeefBoneDetail.id: (context) => const BeefBoneDetail(),
+        BellPepperRedDetail.id: (context) => const BellPepperRedDetail(),
+        BroilerChickenDetail.id: (context) => const BroilerChickenDetail(),
+        GingerDetail.id: (context) => const GingerDetail(),
+        ExploreScreen.id: (context) => const ExploreScreen(),
+        BeveragesScreen.id: (context) => const BeveragesScreen(),
+        DairyAndEggsScreen.id: (context) => const DairyAndEggsScreen()
       },
       initialRoute: SplashScreen.id,
     );
