@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:online_groceries_app/views/AccountView.dart';
 import 'package:online_groceries_app/views/FavouriteView.dart';
 import 'package:online_groceries_app/views/MyCartView.dart';
 
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: FavouriteView(),
+      home: AccountView(),
     );
   }
 
