@@ -41,10 +41,17 @@ class _CustomProductDetailState extends State<CustomProductDetail> {
                 children: [
                   Image.asset(widget.backgroundImagePath,
                       width: widget.width, height: widget.height),
-                  const Padding(
+                  Padding(
                     padding: EdgeInsets.only(top: 60, left: 10),
                     child: Row(
-                      children: [Icon(Icons.arrow_back_ios_new)],
+                      children: [
+                        IconButton(
+                          icon: const Icon(Icons.arrow_back),
+                          onPressed: () {
+                            Navigator.pop(context);
+                          },
+                        ),
+                      ],
                     ),
                   ),
                   Padding(

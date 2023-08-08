@@ -1,8 +1,5 @@
 // ------------------------------ Mohamed Elsanteel ---------------------------------
 
-
-
-
 import 'package:flutter/material.dart';
 import 'package:online_groceries_app/widgets/customproductdetailscreen.dart';
 
@@ -20,8 +17,8 @@ class _AppleDetailState extends State<AppleDetail> {
     return const CustomProductDetail(
       backgroundImagePath: "assets/images/product-detail-background.png",
       productImagePath: "assets/images/big-apple.png",
-      width: 390,
-      height: 350,
+      width: 410,
+      height: 360,
       productTitle: "Natural Red Apple",
       greyedText: "1kg, Price",
       productDetail: "1",
