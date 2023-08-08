@@ -1,3 +1,8 @@
+// ------------------------------ Mohamed Elsanteel ---------------------------------
+
+
+
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:online_groceries_app/widgets/custom_product_container.dart';
@@ -21,15 +26,12 @@ void navigate2(BuildContext context) {
 }
 
 void navigate3(BuildContext context) {
-  Navigator.pushNamed(context, HomeScreen.id);
 }
 
 void navigate4(BuildContext context) {
-  Navigator.pushNamed(context, HomeScreen.id);
 }
 
 void navigate5(BuildContext context) {
-  Navigator.pushNamed(context, HomeScreen.id);
 }
 
 class _HomeScreenState extends State<HomeScreen> {
@@ -39,12 +41,12 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: CustomGNavBar(
-        currentIndex: 0,
         navigate1: () => navigate1(context),
         navigate2: () => navigate2(context),
         navigate3: () => navigate3(context),
         navigate4: () => navigate4(context),
         navigate5: () => navigate5(context),
+        currentIndex: currentIndex,
       ),
       body: SingleChildScrollView(
         child: Padding(

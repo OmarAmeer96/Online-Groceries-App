@@ -1,3 +1,5 @@
+// ------------------------------ Mohamed Elsanteel ---------------------------------
+
 import 'package:flutter/material.dart';
 
 import '../widgets/custom_product_container.dart';
@@ -48,7 +50,6 @@ class _DairyAndEggsScreenState extends State<DairyAndEggsScreen> {
       'productDetails': '30gm, Price',
       'productPrice': '15.99',
     },
-    // Add more custom containers here if needed
   ];
 
   @override
@@ -68,34 +69,52 @@ class _DairyAndEggsScreenState extends State<DairyAndEggsScreen> {
 
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.all(25),
+        padding: const EdgeInsets.all(16),
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Container(
-                width: 364,
-                height: 52,
-                decoration: BoxDecoration(
-                  color: const Color(0xfff2f3f2).withOpacity(1),
-                  borderRadius: BorderRadius.circular(18),
-                ),
-                child: const TextField(
-                  decoration: InputDecoration(
-                    prefixIcon: Icon(
-                      Icons.search,
-                      color: Color(0xff181B19),
-                    ),
-                    hintText: "Search Store",
-                    hintStyle: TextStyle(
-                      color: Color(0xff7C7C7C),
-                      fontFamily: 'Gilroy',
-                      fontStyle: FontStyle.normal,
-                      fontWeight: FontWeight.w600,
-                      fontSize: 14,
-                    ),
-                    border: InputBorder.none,
+              const SizedBox(
+                height: 15,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.arrow_back),
+                    onPressed: () {
+                      Navigator.pop(
+                          context); 
+                    },
                   ),
-                ),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  Container(
+                    width: 310,
+                    height: 52,
+                    decoration: BoxDecoration(
+                      color: const Color(0xfff2f3f2).withOpacity(1),
+                      borderRadius: BorderRadius.circular(18),
+                    ),
+                    child: const TextField(
+                      decoration: InputDecoration(
+                        prefixIcon: Icon(
+                          Icons.search,
+                          color: Color(0xff181B19),
+                        ),
+                        hintText: "Search Store",
+                        hintStyle: TextStyle(
+                          color: Color(0xff7C7C7C),
+                          fontFamily: 'Gilroy',
+                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 14,
+                        ),
+                        border: InputBorder.none,
+                      ),
+                    ),
+                  ),
+                ],
               ),
               SizedBox(
                 height: 750,

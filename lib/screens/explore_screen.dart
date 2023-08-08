@@ -1,5 +1,8 @@
-import 'package:flutter/material.dart';
+// ------------------------------ Mohamed Elsanteel ---------------------------------
 
+import 'package:flutter/material.dart';
+import 'package:online_groceries_app/screens/home_screen.dart';
+import 'package:online_groceries_app/widgets/custom_gnav_bar.dart';
 import 'beverages_screen.dart';
 import 'dairy_and_eggs.dart';
 
@@ -12,7 +15,22 @@ class ExploreScreen extends StatefulWidget {
   State<ExploreScreen> createState() => _ExploreScreenState();
 }
 
+void navigate1(BuildContext context) {
+  Navigator.pushNamed(context, HomeScreen.id);
+}
+
+void navigate2(BuildContext context) {
+  Navigator.pushNamed(context, ExploreScreen.id);
+}
+
+void navigate3(BuildContext context) {}
+
+void navigate4(BuildContext context) {}
+
+void navigate5(BuildContext context) {}
+
 class _ExploreScreenState extends State<ExploreScreen> {
+  int currentIndex = 1;
   String _searchQuery = ''; // Variable to store the search query
   List<Map<String, dynamic>> customContainers = [
     {
@@ -37,13 +55,24 @@ class _ExploreScreenState extends State<ExploreScreen> {
         .toList();
 
     return Scaffold(
+      bottomNavigationBar: CustomGNavBar(
+        navigate1: () => navigate1(context),
+        navigate2: () => navigate2(context),
+        navigate3: () => navigate3(context),
+        navigate4: () => navigate4(context),
+        navigate5: () => navigate5(context),
+        currentIndex: currentIndex,
+      ),
       body: Padding(
-        padding: const EdgeInsets.all(18),
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 0),
         child: Column(
           children: [
             const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                SizedBox(
+                  height: 70,
+                ),
                 Text(
                   "Find Products",
                   style: TextStyle(

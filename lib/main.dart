@@ -1,7 +1,16 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:online_groceries_app/firebase_options.dart';
+import 'package:online_groceries_app/screens/apple_detail.dart';
+import 'package:online_groceries_app/screens/bananas_detail.dart';
+import 'package:online_groceries_app/screens/beef_bone_detail.dart';
+import 'package:online_groceries_app/screens/bell_pepper_red_detail.dart';
+import 'package:online_groceries_app/screens/beverages_screen.dart';
+import 'package:online_groceries_app/screens/broiler_chicken.dart';
+import 'package:online_groceries_app/screens/dairy_and_eggs.dart';
+import 'package:online_groceries_app/screens/explore_screen.dart';
 import 'package:online_groceries_app/screens/get_started_screen.dart';
+import 'package:online_groceries_app/screens/ginger_detail.dart';
 import 'package:online_groceries_app/screens/home_screen.dart';
 import 'package:online_groceries_app/screens/onboarding_screen.dart';
 import 'package:online_groceries_app/screens/sign_in_screen.dart';
