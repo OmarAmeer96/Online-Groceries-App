@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:online_groceries_app/views/AccountView.dart';
+import '../../../Desktop/Groceries-App/lib/screens/AccountView.dart';
 import 'package:online_groceries_app/views/FavouriteView.dart';
-import 'package:online_groceries_app/views/MyCartView.dart';
+import '../../../Desktop/Groceries-App/lib/screens/MyCartView.dart';
 
 void main() {
   runApp(MyApp());
